@@ -234,7 +234,7 @@ export default function BeconCloudPage() {
                 {/* Energy Savings Report */}
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">에너지 절감 리포트 및 냉비 알림</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">에너지 절감 리포트 및 낭비 알림</h2>
                     <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed">
                       에너지 절감 계약(유상) 고객 Only - BECONcloud Web/App을 통한 절감 리포트 확인 가능
                     </p>
@@ -245,9 +245,9 @@ export default function BeconCloudPage() {
                           <span className="text-primary text-sm">✓</span>
                         </div>
                         <div>
-                          <p className="font-semibold text-sm md:text-base">에너지 냉비 알림(App/Web)</p>
+                          <p className="font-semibold text-sm md:text-base">에너지 낭비 알림(App/Web)</p>
                           <p className="text-xs md:text-sm text-muted-foreground">
-                            고기 일정 / 단열 불량 알림 / 설정 온도 관리
+                            끄기 잊음 / 단열 불량 알림 / 설정 온도 과다
                           </p>
                         </div>
                       </div>
@@ -256,7 +256,7 @@ export default function BeconCloudPage() {
                           <span className="text-primary text-sm">✓</span>
                         </div>
                         <p className="text-xs md:text-sm text-muted-foreground">
-                          실내 온도 이상 / 혼자 시간 관리 / 창문 On/Off
+                          실내 온도 이상 / 운전 시간 과다 / 잦은 On/Off
                         </p>
                       </div>
                     </div>
@@ -316,7 +316,7 @@ export default function BeconCloudPage() {
                     <Card className="p-4 md:p-6">
                       <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">핵심 6개 항목 진단</h3>
                       <p className="text-sm md:text-base text-muted-foreground mb-4">
-                        압축기, 센서류, 팬(모터), 드레인펌프, 역운전
+                        압축기, 센서류, 팬(모터), 드레인펌프, 약운전
                       </p>
                       <div className="relative aspect-square">
                         <Image
@@ -340,7 +340,7 @@ export default function BeconCloudPage() {
                             </div>
                             <div>
                               <p className="text-muted-foreground">드레인펌프</p>
-                              <p className="font-semibold">역운전</p>
+                              <p className="font-semibold">약운전</p>
                             </div>
                           </div>
                         </div>
@@ -358,7 +358,7 @@ export default function BeconCloudPage() {
 
                   <div className="text-center">
                     <p className="text-base md:text-lg font-semibold mb-2">
-                      고장 예측을 통한 선제적 조치로 정숙기 걱정은 Zero
+                      고장 예측을 통한 선제적 조치로 성수기 걱정은 Zero
                     </p>
                     <p className="text-sm md:text-base text-muted-foreground">
                       AI 기술로 고장을 미리 예측하여 사전 조치가 가능합니다
@@ -369,7 +369,7 @@ export default function BeconCloudPage() {
                 {/* Energy Savings Results */}
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">에너지 절감 리포트 및 냉비 알림</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">에너지 절감 리포트 및 낭비 알림</h2>
                     <p className="text-xs md:text-sm text-muted-foreground mb-4 md:mb-6">
                       ※ 에너지 절감 계약(유상) 고객 Only : BECONcloud Web/App을 통한 절감 리포트 확인 가능
                     </p>
@@ -378,34 +378,12 @@ export default function BeconCloudPage() {
                     </h3>
                     <div className="space-y-4">
                       <Card className="p-4 bg-primary/5 border-primary/20">
-                        <h4 className="font-semibold mb-2 text-sm md:text-base">에너지 절감 리포트</h4>
-                        <p className="text-xs md:text-sm text-muted-foreground">에너지절감 누적분석</p>
-                      </Card>
-                      <Card className="p-4 bg-secondary">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                          <div>
-                            <p className="text-xs md:text-sm text-muted-foreground mb-1">절감율과 요약</p>
-                            <p className="text-xl md:text-2xl font-bold text-primary">7,448,382원</p>
-                            <p className="text-xs text-muted-foreground">전년 절감액 대비 59.506kWh (16.7%) 절감</p>
-                          </div>
-                          <div>
-                            <p className="text-xs md:text-sm text-muted-foreground mb-1">절감 및 기타요금정보</p>
-                            <div className="space-y-1 text-xs md:text-sm">
-                              <div className="flex justify-between">
-                                <span>중앙제어</span>
-                                <span className="font-semibold">ACP5 1기</span>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>실외기</span>
-                                <span className="font-semibold">멀티V 5 11기</span>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>실내기</span>
-                                <span className="font-semibold">93기</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <h4 className="font-semibold mb-3 text-sm md:text-base">에너지 절감 리포트</h4>
+                        <h5 className="font-semibold mb-2 text-sm">에너지 절감 누적 분석</h5>
+                        <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                          2023년 12월 ~ 2024년 11월 에너지 예측 절감 금액은 7,448,384원입니다. 예측 절감량(절감률)은
+                          59,506kWh(16.7%) 입니다.
+                        </p>
                       </Card>
                     </div>
                   </div>
@@ -440,11 +418,12 @@ export default function BeconCloudPage() {
                           <span className="text-primary font-bold text-sm md:text-base">1</span>
                         </div>
                         <div>
-                          <h4 className="font-semibold mb-1 text-sm md:text-base">환재 에러 발생 기기</h4>
+                          <h4 className="font-semibold mb-1 text-sm md:text-base">현재 에러 발생 기기</h4>
                           <p className="text-xs md:text-sm text-muted-foreground">
-                            현재 에러가 발생한 기기는 없습니다. (별별별 기준)
+                            현재 에러 발생 기기는 0대입니다. (발행일 기준)
                           </p>
-                          <p className="text-xs md:text-sm text-muted-foreground">실내기 / 없습니다.</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">실외기 : 없습니다</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">실내기 : 없습니다</p>
                         </div>
                       </div>
 
@@ -454,8 +433,9 @@ export default function BeconCloudPage() {
                         </div>
                         <div>
                           <h4 className="font-semibold mb-1 text-sm md:text-base">과거 에러 발생 기기</h4>
-                          <p className="text-xs md:text-sm text-muted-foreground">발생일자 응답</p>
-                          <p className="text-xs md:text-sm">실외기 / 0대 대비 에어 에어(에어에어) 확인되었습니다.</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">분석기간 동안</p>
+                          <p className="text-xs md:text-sm">실외기 0대</p>
+                          <p className="text-xs md:text-sm">실내기 1대에 대하여 에러 이력이 확인되었습니다</p>
                         </div>
                       </div>
 
@@ -465,10 +445,9 @@ export default function BeconCloudPage() {
                         </div>
                         <div>
                           <h4 className="font-semibold mb-1 text-sm md:text-base">서비스 이력</h4>
-                          <p className="text-xs md:text-sm text-muted-foreground">발생일자 응답</p>
-                          <p className="text-xs md:text-sm">
-                            부품소 서비스 차이는 12건, 조정작업 및 점검은 4건 진행되었습니다.
-                          </p>
+                          <p className="text-xs md:text-sm text-muted-foreground">분석기간 동안</p>
+                          <p className="text-xs md:text-sm">부품 소요 서비스 처리는 10건</p>
+                          <p className="text-xs md:text-sm">조정 수리 및 방문 설명 4건 수행하였습니다</p>
                         </div>
                       </div>
                     </div>
