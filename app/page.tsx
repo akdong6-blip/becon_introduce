@@ -272,9 +272,97 @@ export default function BeconCloudPage() {
                   </div>
                 </div>
 
-                {/* Service Report */}
+                {/* Energy Savings Results */}
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                  <div className="order-2 md:order-1">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">에너지 절감 리포트 및 낭비 알림</h2>
+                    <p className="text-xs md:text-sm text-muted-foreground mb-4 md:mb-6">
+                      ※ 에너지 절감 계약(유상) 고객 Only : BECONcloud Web/App을 통한 절감 리포트 확인 가능
+                    </p>
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 text-primary">
+                      실내 쾌적함은 유지하면서 에너지 절감까지!
+                    </h3>
+                    <div className="space-y-4">
+                      <Card className="p-4 bg-primary/5 border-primary/20">
+                        <h4 className="font-semibold mb-3 text-sm md:text-base">에너지 절감 리포트</h4>
+                        <h5 className="font-semibold mb-2 text-sm">에너지 절감 누적 분석</h5>
+                        <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                          2023년 12월 ~ 2024년 11월 에너지 예측 절감 금액은 7,448,384원입니다. 예측 절감량(절감률)은
+                          59,506kWh(16.7%) 입니다.
+                        </p>
+                      </Card>
+                    </div>
+                  </div>
+                  <div className="order-1 md:order-2 relative">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7HxVnpf2UxkWdPrtxqFkv5wvQaX2Rl.png"
+                      alt="에너지 절감 결과"
+                      width={600}
+                      height={800}
+                      className="rounded-lg shadow-xl w-full h-auto"
+                    />
+                  </div>
+                </div>
+
+                {/* Device Service Report Detail */}
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="order-2 md:order-1 relative">
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjXqOTYMOWuJSr0Ox2MPLrUXcgSGc2.png"
+                      alt="기기서비스 리포트 상세"
+                      width={600}
+                      height={800}
+                      className="rounded-lg shadow-xl w-full h-auto"
+                    />
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">기기서비스 리포트</h2>
+                    <p className="text-lg md:text-xl font-bold mb-4 md:mb-6">내 제품의 상태와 서비스 이력을 한눈에!</p>
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3 md:gap-4">
+                        <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <span className="text-primary font-bold text-sm md:text-base">1</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-1 text-sm md:text-base">현재 에러 발생 기기</h4>
+                          <p className="text-xs md:text-sm text-muted-foreground">
+                            현재 에러 발생 기기는 0대입니다. (발행일 기준)
+                          </p>
+                          <p className="text-xs md:text-sm text-muted-foreground">실외기 : 없습니다</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">실내기 : 없습니다</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3 md:gap-4">
+                        <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <span className="text-primary font-bold text-sm md:text-base">2</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-1 text-sm md:text-base">과거 에러 발생 기기</h4>
+                          <p className="text-xs md:text-sm text-muted-foreground">분석기간 동안</p>
+                          <p className="text-xs md:text-sm">실외기 0대</p>
+                          <p className="text-xs md:text-sm">실내기 1대에 대하여 에러 이력이 확인되었습니다</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3 md:gap-4">
+                        <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <span className="text-primary font-bold text-sm md:text-base">3</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-1 text-sm md:text-base">서비스 이력</h4>
+                          <p className="text-xs md:text-sm text-muted-foreground">분석기간 동안</p>
+                          <p className="text-xs md:text-sm">부품 소요 서비스 처리는 10건</p>
+                          <p className="text-xs md:text-sm">조정 수리 및 방문 설명 4건 수행하였습니다</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Service Report */}
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                  <div className="relative">
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Eqcs3QT4lDT67l12iz8i8dUZR8C4zZ.png"
                       alt="기기서비스 리포트"
@@ -283,7 +371,7 @@ export default function BeconCloudPage() {
                       className="rounded-lg shadow-xl w-full h-auto"
                     />
                   </div>
-                  <div className="order-1 md:order-2">
+                  <div>
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">기기서비스 리포트</h2>
                     <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed">
                       내 제품의 상태와 서비스 이력을 한눈에 확인할 수 있습니다.
@@ -296,7 +384,7 @@ export default function BeconCloudPage() {
                         </p>
                       </Card>
                       <Card className="p-4 bg-secondary/50">
-                        <h4 className="font-semibold mb-2 text-sm md:text-base">부품소 서비스 내역</h4>
+                        <h4 className="font-semibold mb-2 text-sm md:text-base">부품소요 서비스 내역</h4>
                         <p className="text-xs md:text-sm text-muted-foreground">
                           제품별 서비스 이력과 교체 부품 정보를 상세히 확인할 수 있습니다.
                         </p>
@@ -363,94 +451,6 @@ export default function BeconCloudPage() {
                     <p className="text-sm md:text-base text-muted-foreground">
                       AI 기술로 고장을 미리 예측하여 사전 조치가 가능합니다
                     </p>
-                  </div>
-                </div>
-
-                {/* Energy Savings Results */}
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                  <div>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">에너지 절감 리포트 및 낭비 알림</h2>
-                    <p className="text-xs md:text-sm text-muted-foreground mb-4 md:mb-6">
-                      ※ 에너지 절감 계약(유상) 고객 Only : BECONcloud Web/App을 통한 절감 리포트 확인 가능
-                    </p>
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 text-primary">
-                      실내 쾌적함은 유지하면서 에너지 절감까지!
-                    </h3>
-                    <div className="space-y-4">
-                      <Card className="p-4 bg-primary/5 border-primary/20">
-                        <h4 className="font-semibold mb-3 text-sm md:text-base">에너지 절감 리포트</h4>
-                        <h5 className="font-semibold mb-2 text-sm">에너지 절감 누적 분석</h5>
-                        <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                          2023년 12월 ~ 2024년 11월 에너지 예측 절감 금액은 7,448,384원입니다. 예측 절감량(절감률)은
-                          59,506kWh(16.7%) 입니다.
-                        </p>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="relative">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7HxVnpf2UxkWdPrtxqFkv5wvQaX2Rl.png"
-                      alt="에너지 절감 결과"
-                      width={600}
-                      height={800}
-                      className="rounded-lg shadow-xl w-full h-auto"
-                    />
-                  </div>
-                </div>
-
-                {/* Device Service Report Detail */}
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                  <div className="order-2 md:order-1 relative">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjXqOTYMOWuJSr0Ox2MPLrUXcgSGc2.png"
-                      alt="기기서비스 리포트 상세"
-                      width={600}
-                      height={800}
-                      className="rounded-lg shadow-xl w-full h-auto"
-                    />
-                  </div>
-                  <div className="order-1 md:order-2">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">기기서비스 리포트</h2>
-                    <p className="text-lg md:text-xl font-bold mb-4 md:mb-6">내 제품의 상태와 서비스 이력을 한눈에!</p>
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-3 md:gap-4">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-primary font-bold text-sm md:text-base">1</span>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-1 text-sm md:text-base">현재 에러 발생 기기</h4>
-                          <p className="text-xs md:text-sm text-muted-foreground">
-                            현재 에러 발생 기기는 0대입니다. (발행일 기준)
-                          </p>
-                          <p className="text-xs md:text-sm text-muted-foreground">실외기 : 없습니다</p>
-                          <p className="text-xs md:text-sm text-muted-foreground">실내기 : 없습니다</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-3 md:gap-4">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-primary font-bold text-sm md:text-base">2</span>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-1 text-sm md:text-base">과거 에러 발생 기기</h4>
-                          <p className="text-xs md:text-sm text-muted-foreground">분석기간 동안</p>
-                          <p className="text-xs md:text-sm">실외기 0대</p>
-                          <p className="text-xs md:text-sm">실내기 1대에 대하여 에러 이력이 확인되었습니다</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-3 md:gap-4">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <span className="text-primary font-bold text-sm md:text-base">3</span>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-1 text-sm md:text-base">서비스 이력</h4>
-                          <p className="text-xs md:text-sm text-muted-foreground">분석기간 동안</p>
-                          <p className="text-xs md:text-sm">부품 소요 서비스 처리는 10건</p>
-                          <p className="text-xs md:text-sm">조정 수리 및 방문 설명 4건 수행하였습니다</p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
