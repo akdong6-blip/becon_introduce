@@ -85,14 +85,25 @@ export default function BeconCloudPage() {
             </a>
 
             <a
+              href="https://beconcloud.lge.com/index.do"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
+            >
+              <ExternalLink className="h-5 w-5 flex-shrink-0" />
+              <span className="font-medium whitespace-nowrap">BECONcloud 바로 가기</span>
+            </a>
+
+            <a
               href="https://himsolutek.com"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
             >
-              <ExternalLink className="h-5 w-5" />
-              <span className="font-medium">하이엠솔루텍 바로가기</span>
+              <ExternalLink className="h-5 w-5 flex-shrink-0" />
+              <span className="font-medium whitespace-nowrap">하이엠솔루텍 바로가기</span>
             </a>
 
             <a
@@ -100,8 +111,8 @@ export default function BeconCloudPage() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
             >
-              <Phone className="h-5 w-5" />
-              <span className="font-medium">고객센터 연결</span>
+              <Phone className="h-5 w-5 flex-shrink-0" />
+              <span className="font-medium whitespace-nowrap">고객센터 연결</span>
             </a>
           </nav>
         </aside>
