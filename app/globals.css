@@ -75,7 +75,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  /* Updated to use LG Smart font */
+  --font-sans: var(--font-lg-smart);
   --font-mono: var(--font-geist-mono);
   --color-background: var(--background);
   --color-foreground: var(--foreground);

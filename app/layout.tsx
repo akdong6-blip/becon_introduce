@@ -1,10 +1,36 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
+
+const lgSmartFont = localFont({
+  src: [
+    {
+      path: "../public/fonts/LGSMHAL_V1.4_151215.TTF",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/LGSMHAR_V1.4_151215.TTF",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/LGSMHASB_V1.4_151215.TTF",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/LGSMHAB_V1.4_151215.TTF",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-lg-smart",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "LG BECON Cloud - 시스템 에어컨 원격 관리 솔루션",
@@ -20,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`font-sans ${lgSmartFont.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

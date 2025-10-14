@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Zap, Bell, FileText, Brain, Play, Phone, ExternalLink, LayoutGrid, Video, Menu, X } from "lucide-react"
+import { Zap, Bell, FileText, Brain, Play, Phone, LayoutGrid, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -15,28 +15,50 @@ export default function BeconCloudPage() {
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
-            <div className="flex items-center gap-4">
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2 hover:bg-secondary rounded-lg"
+          <div className="flex items-center justify-between py-4 gap-4">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 hover:bg-secondary rounded-lg flex-shrink-0"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+
+            <div className="flex items-center gap-3 md:gap-4">
+              {/* LG BECON cloud Logo Box */}
+              <a
+                href="https://beconcloud.lge.com/index.do"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
               >
-                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 md:w-8 md:h-8 bg-[#a50034] rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs md:text-sm">LG</span>
+                  </div>
+                  <span className="font-bold text-xs md:text-sm leading-none whitespace-nowrap">LG BECON cloud</span>
+                </div>
+                <span className="text-xs text-gray-400">바로가기</span>
+              </a>
 
-              <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-[#a50034] rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">LG</span>
-                </div>
-                <div>
-                  <div className="font-bold text-base md:text-lg leading-none">LG BECON cloud</div>
-                </div>
-              </div>
+              {/* Hi-M Solutek Logo Box */}
+              <a
+                href="https://himsolutek.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
+              >
+                <span className="font-bold text-xs md:text-sm whitespace-nowrap">Hi-M Solutek</span>
+                <span className="text-xs text-gray-400">바로가기</span>
+              </a>
             </div>
 
-            <div className="hidden md:flex items-center h-10 px-4 bg-white border rounded">
-              <span className="font-semibold text-sm">Hi-M Solutek</span>
-            </div>
+            <a
+              href="tel:1544-8777"
+              className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all ml-auto"
+            >
+              <Phone className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
+              <span className="font-semibold text-xs md:text-sm whitespace-nowrap">고객센터 연결</span>
+            </a>
           </div>
         </div>
       </header>
@@ -45,7 +67,7 @@ export default function BeconCloudPage() {
         {/* Sidebar Navigation */}
         <aside
           className={`
-          fixed lg:sticky top-[73px] left-0 h-[calc(100vh-73px)] 
+          fixed lg:sticky top-[73px] left-0 h-[calc(100vh-73px)]
           w-64 bg-[#1a1a1a] text-white flex-shrink-0 overflow-y-auto z-40
           transition-transform duration-300 ease-in-out
           ${mobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
@@ -67,53 +89,7 @@ export default function BeconCloudPage() {
               <LayoutGrid className="h-5 w-5" />
               <span className="font-medium">주요 기능</span>
             </a>
-
-            <a
-              href="#video"
-              onClick={() => {
-                setActiveSection("video")
-                setMobileMenuOpen(false)
-              }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                activeSection === "video"
-                  ? "bg-[#a50034] text-white"
-                  : "text-gray-300 hover:bg-white/10 hover:text-white"
-              }`}
-            >
-              <Video className="h-5 w-5" />
-              <span className="font-medium">동영상</span>
-            </a>
-
-            <a
-              href="https://beconcloud.lge.com/index.do"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
-            >
-              <ExternalLink className="h-5 w-5 flex-shrink-0" />
-              <span className="font-medium whitespace-nowrap">BECONcloud 바로 가기</span>
-            </a>
-
-            <a
-              href="https://himsolutek.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
-            >
-              <ExternalLink className="h-5 w-5 flex-shrink-0" />
-              <span className="font-medium whitespace-nowrap">하이엠솔루텍 바로가기</span>
-            </a>
-
-            <a
-              href="tel:1544-8777"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
-            >
-              <Phone className="h-5 w-5 flex-shrink-0" />
-              <span className="font-medium whitespace-nowrap">고객센터 연결</span>
-            </a>
+            {/* Removed "사용 설명서" navigation item */}
           </nav>
         </aside>
 
@@ -126,30 +102,56 @@ export default function BeconCloudPage() {
           {/* Hero Section */}
           <section className="py-12 md:py-20 lg:py-32 bg-gradient-to-b from-secondary/30 to-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <div className="inline-block mb-4 md:mb-6 px-4 py-2 bg-primary/10 rounded-full">
-                  <span className="text-xs md:text-sm font-medium text-primary">LG전자 제공</span>
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-8 md:mb-12">
+                  <div className="inline-block mb-4 md:mb-6 px-4 py-2 bg-primary/10 rounded-full">
+                    <span className="text-xs md:text-sm font-medium text-primary">LG전자 제공</span>
+                  </div>
+                  <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-balance">
+                    시스템 에어컨을
+                    <br />
+                    <span className="text-primary">스마트하게 원격 관리</span>
+                  </h1>
+                  <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 text-pretty leading-relaxed px-4">
+                    BECON Cloud는 클라우드 기반의 에어솔루션 제품 토탈 유지관리 서비스 플랫폼입니다.
+                    <br className="hidden md:block" />
+                    실시간 모니터링 및 주요 에러 알림 기능을 통해 신속한 출동 서비스를 제공하고
+                    <br className="hidden md:block" />
+                    설비의 효율적인 관리 및 에너지 절감 서비스를 제공합니다.
+                  </p>
                 </div>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-balance">
-                  시스템 에어컨을
-                  <br />
-                  <span className="text-primary">스마트하게 원격 관리</span>
-                </h1>
-                <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 text-pretty leading-relaxed px-4">
-                  BECON Cloud는 클라우드 기반의 에어솔루션 제품 토탈 유지관리 서비스 플랫폼입니다.
-                  <br className="hidden md:block" />
-                  실시간 모니터링 및 주요 에러 알림 기능을 통해 신속한 출동 서비스를 제공하고
-                  <br className="hidden md:block" />
-                  설비의 효율적인 관리 및 에너지 절감 서비스를 제공합니다.
-                </p>
-                <div className="flex justify-center">
-                  <Button size="lg" variant="outline" className="text-base bg-transparent" asChild>
-                    <a href="#video">
-                      <Play className="mr-2 h-5 w-5" />
-                      소개 영상 보기
-                    </a>
-                  </Button>
-                </div>
+
+                {/* Video Preview Card */}
+                <Card className="p-4 md:p-6 bg-white overflow-hidden">
+                  <a
+                    href="https://m.site.naver.com/1MON9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block group"
+                  >
+                    <div className="relative aspect-video rounded-lg overflow-hidden">
+                      {/* Video Thumbnail */}
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1lSlmh97nhrH8rTaqQKb74ulrZe5wF.png"
+                        alt="BECON cloud 소개 영상"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {/* Play Button Overlay */}
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                        <div className="relative">
+                          <div className="w-20 h-20 md:w-28 md:h-28 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                            <Play className="h-10 w-10 md:h-14 md:w-14 text-primary-foreground fill-current ml-1" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-center gap-2 mt-4">
+                      <Play className="h-5 w-5 text-primary" />
+                      <p className="text-sm md:text-base font-semibold text-primary">소개 영상 보기</p>
+                    </div>
+                  </a>
+                </Card>
               </div>
             </div>
           </section>
@@ -339,8 +341,8 @@ export default function BeconCloudPage() {
                           <p className="text-xs md:text-sm text-muted-foreground">
                             현재 에러 발생 기기는 0대입니다. (발행일 기준)
                           </p>
-                          <p className="text-xs md:text-sm text-muted-foreground">실외기 : 없습니다</p>
-                          <p className="text-xs md:text-sm text-muted-foreground">실내기 : 없습니다</p>
+                          <p className="text-xs md:text-sm">실외기 : 없습니다</p>
+                          <p className="text-xs md:text-sm">실내기 : 없습니다</p>
                         </div>
                       </div>
 
@@ -471,29 +473,37 @@ export default function BeconCloudPage() {
           {/* Video Section */}
           <section id="video" className="py-12 md:py-20 bg-secondary/30">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-left">
+              <div className="max-w-5xl mx-auto">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center">
                   주요 기능 상세정보 동영상
                 </h2>
-                <Card className="p-6 md:p-8 bg-white">
+                <Card className="p-4 md:p-6 bg-white overflow-hidden">
                   <a
                     href="https://m.site.naver.com/1MON9"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block group"
                   >
-                    <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center hover:bg-secondary/70 transition-colors cursor-pointer">
-                      <div className="text-center">
-                        <div className="relative inline-block">
-                          <div className="w-16 h-16 md:w-24 md:h-24 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <Play className="h-8 w-8 md:h-12 md:w-12 text-primary-foreground fill-current ml-1" />
+                    <div className="relative aspect-video rounded-lg overflow-hidden">
+                      {/* Video Thumbnail */}
+                      <Image
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5WoMWxCEV4JJpDxFI8we1O4FAOGcw9.png"
+                        alt="BECON cloud 소개 영상"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {/* Play Button Overlay */}
+                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div className="relative">
+                          <div className="w-20 h-20 md:w-28 md:h-28 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                            <Play className="h-10 w-10 md:h-14 md:w-14 text-primary-foreground fill-current ml-1" />
                           </div>
                         </div>
-                        <p className="text-sm md:text-base text-muted-foreground mt-4 md:mt-6">
-                          클릭하여 소개 영상을 시청하세요
-                        </p>
                       </div>
                     </div>
+                    <p className="text-sm md:text-base text-center text-muted-foreground mt-4">
+                      클릭하여 소개 영상을 시청하세요
+                    </p>
                   </a>
                 </Card>
               </div>
