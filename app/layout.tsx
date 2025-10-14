@@ -8,22 +8,22 @@ import "./globals.css"
 const lgSmartFont = localFont({
   src: [
     {
-      path: "../public/fonts/LGSMHAL_V1.4_151215.TTF",
+      path: "./fonts/LGSMHAL_V1.4_151215.TTF",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../public/fonts/LGSMHAR_V1.4_151215.TTF",
+      path: "./fonts/LGSMHAR_V1.4_151215.TTF",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/LGSMHASB_V1.4_151215.TTF",
+      path: "./fonts/LGSMHASB_V1.4_151215.TTF",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../public/fonts/LGSMHAB_V1.4_151215.TTF",
+      path: "./fonts/LGSMHAB_V1.4_151215.TTF",
       weight: "700",
       style: "normal",
     },
