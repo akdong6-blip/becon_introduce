@@ -112,13 +112,6 @@ export default function BeconCloudPage() {
                     <br />
                     <span className="text-primary">스마트하게 원격 관리</span>
                   </h1>
-                  <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 text-pretty leading-relaxed px-4">
-                    BECON Cloud는 클라우드 기반의 에어솔루션 제품 토탈 유지관리 서비스 플랫폼입니다.
-                    <br className="hidden md:block" />
-                    실시간 모니터링 및 주요 에러 알림 기능을 통해 신속한 출동 서비스를 제공하고
-                    <br className="hidden md:block" />
-                    설비의 효율적인 관리 및 에너지 절감 서비스를 제공합니다.
-                  </p>
                 </div>
 
                 {/* Video Preview Card */}
@@ -373,39 +366,6 @@ export default function BeconCloudPage() {
                   </div>
                 </div>
 
-                {/* Service Report */}
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                  <div className="relative">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Eqcs3QT4lDT67l12iz8i8dUZR8C4zZ.png"
-                      alt="기기서비스 리포트"
-                      width={600}
-                      height={800}
-                      className="rounded-lg shadow-xl w-full h-auto"
-                    />
-                  </div>
-                  <div>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">기기서비스 리포트</h2>
-                    <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 leading-relaxed">
-                      내 제품의 상태와 서비스 이력을 한눈에 확인할 수 있습니다.
-                    </p>
-                    <div className="space-y-4">
-                      <Card className="p-4 bg-secondary/50">
-                        <h4 className="font-semibold mb-2 text-sm md:text-base">서비스 일정 관리</h4>
-                        <p className="text-xs md:text-sm text-muted-foreground">
-                          월별 서비스 일정을 캘린더로 확인하고 관리할 수 있습니다.
-                        </p>
-                      </Card>
-                      <Card className="p-4 bg-secondary/50">
-                        <h4 className="font-semibold mb-2 text-sm md:text-base">부품소요 서비스 내역</h4>
-                        <p className="text-xs md:text-sm text-muted-foreground">
-                          제품별 서비스 이력과 교체 부품 정보를 상세히 확인할 수 있습니다.
-                        </p>
-                      </Card>
-                    </div>
-                  </div>
-                </div>
-
                 {/* AI Prediction */}
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/30 rounded-2xl p-6 md:p-8 lg:p-12">
                   <div className="text-center mb-8 md:mb-12">
@@ -466,46 +426,6 @@ export default function BeconCloudPage() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Video Section */}
-          <section id="video" className="py-12 md:py-20 bg-secondary/30">
-            <div className="container mx-auto px-4">
-              <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center">
-                  주요 기능 상세정보 동영상
-                </h2>
-                <Card className="p-4 md:p-6 bg-white overflow-hidden">
-                  <a
-                    href="https://m.site.naver.com/1MON9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block group"
-                  >
-                    <div className="relative aspect-video rounded-lg overflow-hidden">
-                      {/* Video Thumbnail */}
-                      <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5WoMWxCEV4JJpDxFI8we1O4FAOGcw9.png"
-                        alt="BECON cloud 소개 영상"
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      {/* Play Button Overlay */}
-                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                        <div className="relative">
-                          <div className="w-20 h-20 md:w-28 md:h-28 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
-                            <Play className="h-10 w-10 md:h-14 md:w-14 text-primary-foreground fill-current ml-1" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p className="text-sm md:text-base text-center text-muted-foreground mt-4">
-                      클릭하여 소개 영상을 시청하세요
-                    </p>
-                  </a>
-                </Card>
               </div>
             </div>
           </section>
