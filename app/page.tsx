@@ -266,7 +266,7 @@ export default function BeconCloudPage() {
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">에너지 절감 리포트</h2>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                       <span className="font-semibold">※ 에너지 절감 계약(유상) 고객 Only</span>
-                      <br />- BECONcloud Web/App을 통한 절감 리포트 확인 가능
+                      <br />- BECONcloud Web을 통한 절감 리포트 확인 가능
                     </p>
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-primary whitespace-nowrap">
                       실내 쾌적함은 유지하면서
@@ -428,7 +428,7 @@ export default function BeconCloudPage() {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                  지금 바로 BECON Cloud를
+                  지금 바로 BECON cloud를
                   <br />
                   경험해 보세요
                 </h2>
