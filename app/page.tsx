@@ -110,7 +110,7 @@ export default function BeconCloudPage() {
                   <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 text-balance">
                     시스템 에어컨을
                     <br />
-                    <span className="text-primary">스마트하게 원격 관리</span>
+                    <span className="text-primary">원격 관리로 스마트하게</span>
                   </h1>
                 </div>
 
@@ -251,7 +251,7 @@ export default function BeconCloudPage() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Dnj82WZk9DIzxDcxaakmtQ98grJbi6.png"
+                      src="/images/design-mode/image.png"
                       alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
                       width={600}
                       height={800}
@@ -268,6 +268,7 @@ export default function BeconCloudPage() {
                       <span className="font-semibold">※ 에너지 절감 계약(유상) 고객 Only</span>
                       <br />- BECON cloud Web을 통한 절감 리포트 확인 가능
                     </p>
+
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-primary whitespace-nowrap">
                       실내 쾌적함은 유지하면서
                       <br />
@@ -286,7 +287,7 @@ export default function BeconCloudPage() {
                   </div>
                   <div className="order-1 md:order-2 relative">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7HxVnpf2UxkWdPrtxqFkv5wvQaX2Rl.png"
+                      src="/images/design-mode/image.png"
                       alt="에너지 절감 결과"
                       width={600}
                       height={800}
@@ -299,7 +300,7 @@ export default function BeconCloudPage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="order-2 md:order-1 relative">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjXqOTYMOWuJSr0Ox2MPLrUXcgSGc2.png"
+                      src="/images/design-mode/image.png"
                       alt="기기서비스 리포트 상세"
                       width={600}
                       height={800}
@@ -366,13 +367,13 @@ export default function BeconCloudPage() {
 
                   <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
                     <Card className="p-5 md:p-6 lg:p-8">
-                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-5">핵심 6개 항목 진단</h3>
-                      <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-4">
-                        압축기, 센서류, 팬(모터), 드레인펌프, 약운전
+                      <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4 md:mb-5">핵심 6개 항목 진단</h3>
+                      <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-4">
+                        압축기, 센서류, 팬(모터), 드레인펌프, 약운전, 냉매
                       </p>
-                      <div className="relative aspect-square">
+                      <div className="relative aspect-[4/3]">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Qm3cLgh75jiTzprIwqh5D7mHKFCoET.png"
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CgdETLTMMOH5oR6mvFfk5wAcIqHaYB.png"
                           alt="AI 고장예측 진단"
                           fill
                           className="object-contain"
@@ -381,31 +382,13 @@ export default function BeconCloudPage() {
                     </Card>
 
                     <Card className="p-5 md:p-6 lg:p-8">
-                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-5">
-                        점검 필요한 실외기가 2대 존재합니다
-                      </h3>
-                      <div className="space-y-4">
-                        <div className="p-4 bg-secondary rounded-lg">
-                          <p className="font-bold mb-2 text-base md:text-lg">실외기</p>
-                          <div className="grid grid-cols-2 gap-4 text-sm md:text-base">
-                            <div>
-                              <p className="text-muted-foreground">실외 팬/모터</p>
-                              <p className="font-semibold">압축기, 센서류</p>
-                            </div>
-                            <div>
-                              <p className="text-muted-foreground">드레인펌프</p>
-                              <p className="font-semibold">약운전</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="relative aspect-video">
-                          <Image
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PwrRMGE9RZE1BJQgXmVAXAVxa5qFyP.png"
-                            alt="AI 고장예측 프로세스"
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
+                      <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">
+                        <Image
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjTtg3jVtGKG22GYvDf9WMSlFDiDVx.png"
+                          alt="점검 필요한 실외기 진단"
+                          fill
+                          className="object-contain"
+                        />
                       </div>
                     </Card>
                   </div>
