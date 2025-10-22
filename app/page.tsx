@@ -110,7 +110,7 @@ export default function BeconCloudPage() {
                   <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 text-balance">
                     시스템 에어컨을
                     <br />
-                    <span className="text-primary">원격 관리로 스마트하게</span>
+                    <span className="text-primary">스마트하게 원격 관리</span>
                   </h1>
                 </div>
 
@@ -126,7 +126,7 @@ export default function BeconCloudPage() {
                     />
                   </div>
                   <div className="flex items-center justify-center gap-2 mt-4">
-                    <p className="text-sm md:text-base font-semibold text-primary">BECON cloud 소개 영상</p>
+                    <p className="text-sm md:text-base font-semibold text-primary">BECON Cloud 소개 영상</p>
                   </div>
                 </Card>
               </div>
@@ -190,7 +190,7 @@ export default function BeconCloudPage() {
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">02</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">편리한 서비스 접수</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    알림 팝업을 통한 <span className="text-primary font-bold">원터치</span> 서비스 접수
+                    알림 팝업을 통한 <span className="text-primary font-bold"> <br />원터치</span> 서비스 접수
                   </p>
                 </Card>
 
@@ -201,7 +201,7 @@ export default function BeconCloudPage() {
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">03</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">준비된 서비스 진행</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    사전 데이터 확인 및 필요 부품 준비 후 서비스 출동
+                    사전 데이터 확인 및 <br /> 필요부품 준비 후 서비스 출동
                   </p>
                 </Card>
 
@@ -212,7 +212,7 @@ export default function BeconCloudPage() {
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">04</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">정상운전</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    신속한 서비스로 최적의 운전 상태 유지
+                    신속한 서비스로  <br />최적의 운전 상태 유지
                   </p>
                 </Card>
               </div>
@@ -319,7 +319,7 @@ export default function BeconCloudPage() {
                         </div>
                         <div>
                           <h4 className="font-bold mb-2 text-base md:text-lg lg:text-xl">현재 에러 발생 기기</h4>
-                          <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-1">
+                          <p className="text-sm md:text-base lg:text-lg">
                             현재 에러 발생 기기는 0대입니다. (발행일 기준)
                           </p>
                           <p className="text-sm md:text-base lg:text-lg">실외기 : 없습니다</p>
@@ -333,7 +333,7 @@ export default function BeconCloudPage() {
                         </div>
                         <div>
                           <h4 className="font-bold mb-2 text-base md:text-lg lg:text-xl">과거 에러 발생 기기</h4>
-                          <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-1">분석기간 동안</p>
+                          <p className="text-sm md:text-base lg:text-lg">분석기간 동안</p>
                           <p className="text-sm md:text-base lg:text-lg">실외기 0대</p>
                           <p className="text-sm md:text-base lg:text-lg">
                             실내기 1대에 대하여 에러 이력이 확인되었습니다
@@ -347,7 +347,7 @@ export default function BeconCloudPage() {
                         </div>
                         <div>
                           <h4 className="font-bold mb-2 text-base md:text-lg lg:text-xl">서비스 이력</h4>
-                          <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-1">분석기간 동안</p>
+                          <p className="text-sm md:text-base lg:text-lg">분석기간 동안</p>
                           <p className="text-sm md:text-base lg:text-lg">부품 소요 서비스 처리는 10건</p>
                           <p className="text-sm md:text-base lg:text-lg">조정 수리 및 방문 설명 4건 수행하였습니다</p>
                         </div>
@@ -366,26 +366,26 @@ export default function BeconCloudPage() {
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-                    <Card className="p-5 md:p-6 lg:p-8">
-                      <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4 md:mb-5">핵심 6개 항목 진단</h3>
-                      <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-4">
-                        압축기, 센서류, 팬(모터), 드레인펌프, 약운전, 냉매
+                    <Card className="p-5 md:p-6 lg:p-8 flex flex-col">
+                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-5">핵심 6개 항목 진단</h3>
+                      <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-4 whitespace-nowrap overflow-hidden text-ellipsis">
+                        압축기,센서류,팬(모터),드레인펌프,약운전,냉매
                       </p>
-                      <div className="relative aspect-[4/3]">
+                      <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CgdETLTMMOH5oR6mvFfk5wAcIqHaYB.png"
-                          alt="AI 고장예측 진단"
+                          src="/images/design-mode/image.png"
+                          alt="AI 고장예측 프로세스"
                           fill
                           className="object-contain"
                         />
                       </div>
                     </Card>
 
-                    <Card className="p-5 md:p-6 lg:p-8">
-                      <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">
+                    <Card className="p-5 md:p-6 lg:p-8 flex flex-col">
+                      <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjTtg3jVtGKG22GYvDf9WMSlFDiDVx.png"
-                          alt="점검 필요한 실외기 진단"
+                          src="/images/design-mode/image.png"
+                          alt="점검 필요한 실외기 진단 리포트"
                           fill
                           className="object-contain"
                         />
@@ -411,7 +411,7 @@ export default function BeconCloudPage() {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                  지금 바로 BECON cloud를
+                  지금 바로 BECON Cloud를
                   <br />
                   경험해 보세요
                 </h2>
