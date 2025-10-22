@@ -126,7 +126,7 @@ export default function BeconCloudPage() {
                     />
                   </div>
                   <div className="flex items-center justify-center gap-2 mt-4">
-                    <p className="text-sm md:text-base font-semibold text-primary">BECON Cloud 소개 영상</p>
+                    <p className="text-sm md:text-base font-semibold text-primary">BECON cloud 소개 영상</p>
                   </div>
                 </Card>
               </div>
