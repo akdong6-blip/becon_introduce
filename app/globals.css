@@ -75,9 +75,7 @@
 }
 
 @theme inline {
-  /* Updated to use LG Smart font */
-  --font-sans: var(--font-lg-smart);
-  --font-mono: var(--font-geist-mono);
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

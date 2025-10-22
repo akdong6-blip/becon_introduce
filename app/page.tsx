@@ -190,7 +190,13 @@ export default function BeconCloudPage() {
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">02</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">편리한 서비스 접수</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    알림 팝업을 통한 <span className="text-primary font-bold"> <br />원터치</span> 서비스 접수
+                    알림 팝업을 통한{" "}
+                    <span className="text-primary font-bold">
+                      {" "}
+                      <br />
+                      원터치
+                    </span>{" "}
+                    서비스 접수
                   </p>
                 </Card>
 
@@ -212,7 +218,8 @@ export default function BeconCloudPage() {
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">04</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">정상운전</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    신속한 서비스로  <br />최적의 운전 상태 유지
+                    신속한 서비스로 <br />
+                    최적의 운전 상태 유지
                   </p>
                 </Card>
               </div>
@@ -249,19 +256,21 @@ export default function BeconCloudPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="relative">
-                    <Image
-                      src="/images/design-mode/image.png"
-                      alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
-                      width={600}
-                      height={800}
-                      className="rounded-lg shadow-xl w-full h-auto"
-                    />
+                  <div className="relative flex items-start justify-center md:justify-end">
+                    <div className="relative w-full max-w-[800px]">
+                      <Image
+                        src="/images/design-mode/image(1).png"
+                        alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
+                        width={800}
+                        height={1000}
+                        className="rounded-lg shadow-xl w-full h-auto"
+                      />
+                    </div>
                   </div>
                 </div>
 
                 {/* Energy Savings Report */}
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
                   <div className="order-2 md:order-1">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">에너지 절감 리포트</h2>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
@@ -285,14 +294,16 @@ export default function BeconCloudPage() {
                       </Card>
                     </div>
                   </div>
-                  <div className="order-1 md:order-2 relative">
-                    <Image
-                      src="/images/design-mode/image.png"
-                      alt="에너지 절감 결과"
-                      width={600}
-                      height={800}
-                      className="rounded-lg shadow-xl w-full h-auto"
-                    />
+                  <div className="order-1 md:order-2 relative flex items-start justify-center md:justify-start">
+                    <div className="relative w-full max-w-[800px]">
+                      <Image
+                        src="/images/design-mode/image(1).png"
+                        alt="에너지 절감 결과"
+                        width={800}
+                        height={1000}
+                        className="rounded-lg shadow-xl w-full h-auto"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -300,7 +311,7 @@ export default function BeconCloudPage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="order-2 md:order-1 relative">
                     <Image
-                      src="/images/design-mode/image.png"
+                      src="/images/design-mode/image(1).png"
                       alt="기기서비스 리포트 상세"
                       width={600}
                       height={800}
@@ -373,7 +384,7 @@ export default function BeconCloudPage() {
                       </p>
                       <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="/images/design-mode/image.png"
+                          src="/images/design-mode/image(1).png"
                           alt="AI 고장예측 프로세스"
                           fill
                           className="object-contain"
@@ -384,7 +395,7 @@ export default function BeconCloudPage() {
                     <Card className="p-5 md:p-6 lg:p-8 flex flex-col">
                       <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="/images/design-mode/image.png"
+                          src="/images/design-mode/image(1).png"
                           alt="점검 필요한 실외기 진단 리포트"
                           fill
                           className="object-contain"
