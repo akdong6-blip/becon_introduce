@@ -259,7 +259,7 @@ export default function BeconCloudPage() {
                   <div className="relative flex items-start justify-center md:justify-end">
                     <div className="relative w-full max-w-[800px]">
                       <Image
-                        src="/images/design-mode/image(1).png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Rk89RqxVxbvunDPURytyrHsfw0i3JH.png"
                         alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
                         width={800}
                         height={1000}
@@ -297,7 +297,7 @@ export default function BeconCloudPage() {
                   <div className="order-1 md:order-2 relative flex items-start justify-center md:justify-start">
                     <div className="relative w-full max-w-[800px]">
                       <Image
-                        src="/images/design-mode/image(1).png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VAr6gNZU7YlqlU2ToL5VKgbF4DZLUO.png"
                         alt="에너지 절감 결과"
                         width={800}
                         height={1000}
@@ -311,7 +311,7 @@ export default function BeconCloudPage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="order-2 md:order-1 relative">
                     <Image
-                      src="/images/design-mode/image(1).png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hdvHgPUDWcPL1qR4KINphoSNMwfX4i.png"
                       alt="기기서비스 리포트 상세"
                       width={600}
                       height={800}
@@ -384,7 +384,7 @@ export default function BeconCloudPage() {
                       </p>
                       <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="/images/design-mode/image(1).png"
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Kd8Jtf7ANq9RmkSEo3wEjpw3TcFHmD.png"
                           alt="AI 고장예측 프로세스"
                           fill
                           className="object-contain"
@@ -395,7 +395,7 @@ export default function BeconCloudPage() {
                     <Card className="p-5 md:p-6 lg:p-8 flex flex-col">
                       <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="/images/design-mode/image(1).png"
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gLxu24P9oResfAyGEwKlO60A3OtyNT.png"
                           alt="점검 필요한 실외기 진단 리포트"
                           fill
                           className="object-contain"
