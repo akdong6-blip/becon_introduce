@@ -209,7 +209,7 @@ export default function SignupGuidePage() {
         )}
 
         <main className="flex-1 lg:ml-0 relative">
-          <div className="container mx-auto px-4 py-6 max-w-4xl">
+          <div className="container mx-auto px-4 py-6 max-w-6xl">
             <div className="mb-6 text-center">
               <h1 className="text-xl md:text-2xl font-bold mb-2">BECON cloud 가입방법 안내</h1>
               <p className="text-xs md:text-sm text-muted-foreground">
@@ -217,26 +217,52 @@ export default function SignupGuidePage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-lg shadow-sm border p-4 mb-6">
-              <div className="space-y-4">
-                <div>
-                  <h2 className="text-lg md:text-xl font-bold mb-2">{slides[currentSlide].title}</h2>
-                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                    {slides[currentSlide].content}
-                  </p>
-                </div>
+            <div className="flex items-center gap-3 md:gap-6 mb-6">
+              {/* Previous Button */}
+              <Button
+                variant="outline"
+                onClick={prevSlide}
+                disabled={currentSlide === 0}
+                className="h-12 w-12 md:h-14 md:w-14 rounded-full shadow-lg bg-white hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed flex-shrink-0"
+                size="icon"
+              >
+                <ChevronLeft className="h-6 w-6" />
+                <span className="sr-only">이전</span>
+              </Button>
 
-                <div className="relative w-full bg-secondary/10 rounded-lg overflow-hidden">
-                  <Image
-                    src={slides[currentSlide].image || "/placeholder.svg"}
-                    alt={slides[currentSlide].title}
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto"
-                    priority
-                  />
+              {/* Content Card */}
+              <div className="bg-white rounded-lg shadow-sm border p-4 flex-1">
+                <div className="space-y-4">
+                  <div>
+                    <h2 className="text-lg md:text-xl font-bold mb-2">{slides[currentSlide].title}</h2>
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                      {slides[currentSlide].content}
+                    </p>
+                  </div>
+
+                  <div className="relative w-full bg-secondary/10 rounded-lg overflow-hidden">
+                    <Image
+                      src={slides[currentSlide].image || "/placeholder.svg"}
+                      alt={slides[currentSlide].title}
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto"
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
+
+              {/* Next Button */}
+              <Button
+                onClick={nextSlide}
+                disabled={currentSlide === slides.length - 1}
+                className="h-12 w-12 md:h-14 md:w-14 rounded-full shadow-lg bg-[#a50034] hover:bg-[#8a0029] disabled:opacity-30 disabled:cursor-not-allowed flex-shrink-0"
+                size="icon"
+              >
+                <ChevronRight className="h-6 w-6" />
+                <span className="sr-only">다음</span>
+              </Button>
             </div>
 
             <div className="space-y-6">
@@ -260,27 +286,6 @@ export default function SignupGuidePage() {
               </div>
             </div>
           </div>
-
-          <Button
-            variant="outline"
-            onClick={prevSlide}
-            disabled={currentSlide === 0}
-            className="fixed left-4 top-1/2 -translate-y-1/2 z-50 h-12 w-12 rounded-full shadow-lg bg-white hover:bg-gray-50 disabled:opacity-30"
-            size="icon"
-          >
-            <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">이전</span>
-          </Button>
-
-          <Button
-            onClick={nextSlide}
-            disabled={currentSlide === slides.length - 1}
-            className="fixed right-4 top-1/2 -translate-y-1/2 z-50 h-12 w-12 rounded-full shadow-lg bg-[#a50034] hover:bg-[#8a0029] disabled:opacity-30"
-            size="icon"
-          >
-            <ChevronRight className="h-6 w-6" />
-            <span className="sr-only">다음</span>
-          </Button>
         </main>
       </div>
       <BeconCloudPopup />

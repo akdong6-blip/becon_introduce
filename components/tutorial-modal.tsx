@@ -93,7 +93,7 @@ export function TutorialModal({ open, onOpenChange }: TutorialModalProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl p-0 gap-0 overflow-hidden">
+      <DialogContent className="max-w-4xl p-0 gap-0 overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="text-lg md:text-xl font-bold">BECON Cloud 미리 체험하기</h2>
@@ -115,24 +115,53 @@ export function TutorialModal({ open, onOpenChange }: TutorialModalProps) {
           </p>
 
           {/* Image Container */}
-          <div className="relative bg-secondary/30 rounded-lg p-4 mb-6">
-            <div className="relative aspect-[9/16] max-h-[500px] mx-auto">
-              <Image
-                src={currentStepData.image || "/placeholder.svg"}
-                alt={currentStepData.imageAlt}
-                fill
-                className="object-contain rounded-lg"
-              />
+          <div className="flex items-center gap-4 mb-6">
+            {/* Previous Button */}
+            <Button
+              variant="outline"
+              onClick={handlePrevious}
+              disabled={currentStep === 0}
+              className="h-12 w-12 rounded-full shadow-lg bg-white hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed flex-shrink-0"
+              size="icon"
+            >
+              <ChevronLeft className="h-6 w-6" />
+              <span className="sr-only">이전</span>
+            </Button>
+
+            {/* Image Container */}
+            <div className="relative bg-secondary/30 rounded-lg p-4 flex-1">
+              <div className="relative aspect-[9/16] max-h-[500px] mx-auto">
+                <Image
+                  src={currentStepData.image || "/placeholder.svg"}
+                  alt={currentStepData.imageAlt}
+                  fill
+                  className="object-contain rounded-lg"
+                />
+              </div>
+
+              {/* Description Overlay */}
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-white rounded-lg shadow-lg p-4">
+                <p className="text-sm text-center font-medium">{currentStepData.description}</p>
+              </div>
             </div>
 
-            {/* Description Overlay */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-white rounded-lg shadow-lg p-4">
-              <p className="text-sm text-center font-medium">{currentStepData.description}</p>
-            </div>
+            {/* Next Button */}
+            <Button
+              onClick={handleNext}
+              className="h-12 w-12 rounded-full shadow-lg bg-primary hover:bg-primary/90 flex-shrink-0"
+              size="icon"
+            >
+              {currentStep === tutorialSteps.length - 1 ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <ChevronRight className="h-6 w-6" />
+              )}
+              <span className="sr-only">{currentStep === tutorialSteps.length - 1 ? "완료" : "다음"}</span>
+            </Button>
           </div>
 
           {/* Progress Dots */}
-          <div className="flex justify-center gap-2 mb-6">
+          <div className="flex justify-center gap-2 mb-4">
             {tutorialSteps.map((_, index) => (
               <button
                 key={index}
@@ -145,21 +174,8 @@ export function TutorialModal({ open, onOpenChange }: TutorialModalProps) {
             ))}
           </div>
 
-          {/* Navigation */}
-          <div className="flex items-center justify-between">
-            <Button variant="ghost" onClick={handlePrevious} disabled={currentStep === 0}>
-              <ChevronLeft className="h-4 w-4 mr-1" />
-              이전
-            </Button>
-
-            <Button onClick={handleNext} className="bg-primary hover:bg-primary/90">
-              {currentStep === tutorialSteps.length - 1 ? "완료" : "다음"}
-              {currentStep < tutorialSteps.length - 1 && <ChevronRight className="h-4 w-4 ml-1" />}
-            </Button>
-          </div>
-
           {/* Don't Show Today */}
-          <div className="mt-4 text-center">
+          <div className="text-center">
             <button
               onClick={() => setDontShowToday(!dontShowToday)}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors underline"
