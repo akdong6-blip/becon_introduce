@@ -16,8 +16,8 @@ export default function BeconCloudPage() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4 gap-4">
+        <div className="container mx-auto px-2 md:px-4">
+          <div className="flex items-center justify-between py-4 gap-2 md:gap-4">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 hover:bg-secondary rounded-lg flex-shrink-0"
@@ -25,21 +25,23 @@ export default function BeconCloudPage() {
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
 
-            <div className="flex items-center gap-3 md:gap-4">
-              {/* LG BECON cloud Logo Box */}
+            {/* LG BECON cloud Logo Box */}
+            <div className="flex items-center gap-2 md:gap-4">
               <a
                 href="https://beconcloud.lge.com/index.do"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
+                className="flex flex-col items-center justify-center gap-1 w-[100px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
               >
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 md:w-8 md:h-8 bg-[#a50034] rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-xs md:text-sm">LG</span>
+                <div className="flex items-center gap-1 md:gap-2">
+                  <div className="w-5 h-5 md:w-8 md:h-8 bg-[#a50034] rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-[10px] md:text-sm">LG</span>
                   </div>
-                  <span className="font-bold text-xs md:text-sm leading-none whitespace-nowrap">LG BECON cloud</span>
+                  <span className="font-bold text-[10px] md:text-sm leading-none whitespace-nowrap">
+                    LG BECON cloud
+                  </span>
                 </div>
-                <span className="text-xs text-gray-400">바로가기</span>
+                <span className="text-[10px] md:text-xs text-gray-400">바로가기</span>
               </a>
 
               {/* Hi-M Solutek Logo Box */}
@@ -47,19 +49,20 @@ export default function BeconCloudPage() {
                 href="https://himsolutek.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
+                className="flex flex-col items-center justify-center gap-1 w-[100px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
               >
-                <span className="font-bold text-xs md:text-sm whitespace-nowrap">Hi-M Solutek</span>
-                <span className="text-xs text-gray-400">바로가기</span>
+                <span className="font-bold text-[10px] md:text-sm whitespace-nowrap">Hi-M Solutek</span>
+                <span className="text-[10px] md:text-xs text-gray-400">바로가기</span>
               </a>
             </div>
 
+            {/* Customer Service */}
             <a
               href="tel:1544-8777"
-              className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all ml-auto"
+              className="flex flex-col items-center justify-center gap-1 w-[100px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all ml-auto"
             >
               <Phone className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
-              <span className="font-semibold text-xs md:text-sm whitespace-nowrap">고객센터 연결</span>
+              <span className="font-semibold text-[10px] md:text-sm whitespace-nowrap">고객센터 연결</span>
             </a>
           </div>
         </div>
@@ -271,7 +274,7 @@ export default function BeconCloudPage() {
                   <div className="relative flex items-start justify-center md:justify-end">
                     <div className="relative w-full max-w-[1600px]">
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V94kXUv1SjbtAUdu4t8uFzsIDrntKS.png"
+                        src="/images/design-mode/image(2).png"
                         alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
                         width={1600}
                         height={2000}
@@ -309,7 +312,7 @@ export default function BeconCloudPage() {
                   <div className="order-1 md:order-2 relative flex items-start justify-center md:justify-start">
                     <div className="relative w-full max-w-[1000px]">
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VAr6gNZU7YlqlU2ToL5VKgbF4DZLUO.png"
+                        src="/images/design-mode/image(2).png"
                         alt="에너지 절감 결과"
                         width={1000}
                         height={1250}
@@ -323,7 +326,7 @@ export default function BeconCloudPage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="order-2 md:order-1 relative">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hdvHgPUDWcPL1qR4KINphoSNMwfX4i.png"
+                      src="/images/design-mode/image(2).png"
                       alt="기기서비스 리포트 상세"
                       width={750}
                       height={1000}
@@ -396,7 +399,7 @@ export default function BeconCloudPage() {
                       </p>
                       <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Kd8Jtf7ANq9RmkSEo3wEjpw3TcFHmD.png"
+                          src="/images/design-mode/image(2).png"
                           alt="AI 고장예측 프로세스"
                           fill
                           className="object-contain"
@@ -407,7 +410,7 @@ export default function BeconCloudPage() {
                     <Card className="p-5 md:p-6 lg:p-8 flex flex-col">
                       <div className="relative w-full flex-1 min-h-[400px]">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gLxu24P9oResfAyGEwKlO60A3OtyNT.png"
+                          src="/images/design-mode/image(2).png"
                           alt="점검 필요한 실외기 진단 리포트"
                           fill
                           className="object-contain"
@@ -434,7 +437,7 @@ export default function BeconCloudPage() {
             <div className="container mx-auto px-4">
               <div className="max-w-5xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                  지금 바로 BECON Cloud를
+                  지금 바로 BECON cloud를
                   <br />
                   경험해 보세요
                 </h2>
