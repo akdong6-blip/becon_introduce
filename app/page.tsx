@@ -5,6 +5,8 @@ import { Card } from "@/components/ui/card"
 import { Zap, Bell, FileText, Brain, Phone, LayoutGrid, Menu, X } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
+import Link from "next/link"
+import { BeconCloudPopup } from "@/components/becon-cloud-popup"
 
 export default function BeconCloudPage() {
   const [activeSection, setActiveSection] = useState("features")
@@ -68,28 +70,38 @@ export default function BeconCloudPage() {
         <aside
           className={`
           fixed lg:sticky top-[73px] left-0 h-[calc(100vh-73px)]
-          w-64 bg-[#1a1a1a] text-white flex-shrink-0 overflow-y-auto z-40
+          w-80 bg-[#1a1a1a] text-white flex-shrink-0 overflow-y-auto z-40
           transition-transform duration-300 ease-in-out
           ${mobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
         >
-          <nav className="p-4 space-y-2">
+          <nav className="p-6 space-y-3">
             <a
               href="#features"
               onClick={() => {
                 setActiveSection("features")
                 setMobileMenuOpen(false)
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+              className={`flex items-center gap-4 px-5 py-4 rounded-lg transition-colors ${
                 activeSection === "features"
                   ? "bg-[#a50034] text-white"
                   : "text-gray-300 hover:bg-white/10 hover:text-white"
               }`}
             >
-              <LayoutGrid className="h-5 w-5" />
-              <span className="font-medium">주요 기능</span>
+              <LayoutGrid className="h-6 w-6 flex-shrink-0" />
+              <span className="font-semibold text-xl leading-tight">주요 기능</span>
             </a>
-            {/* Removed "사용 설명서" navigation item */}
+            <Link
+              href="/signup-guide"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full flex items-center gap-4 px-5 py-4 rounded-lg transition-colors text-gray-300 hover:bg-white/10 hover:text-white text-left"
+            >
+              <FileText className="h-6 w-6 flex-shrink-0" />
+              <div className="flex flex-col leading-tight">
+                <span className="font-semibold text-xl">BECON cloud</span>
+                <span className="font-semibold text-xl">가입방법 안내</span>
+              </div>
+            </Link>
           </nav>
         </aside>
 
@@ -102,7 +114,7 @@ export default function BeconCloudPage() {
           {/* Hero Section */}
           <section className="py-12 md:py-20 lg:py-32 bg-gradient-to-b from-secondary/30 to-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-5xl mx-auto">
+              <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-8 md:mb-12">
                   <div className="inline-block mb-4 md:mb-6 px-4 py-2 bg-primary/10 rounded-full">
                     <span className="text-sm md:text-base font-semibold text-primary">LG전자 제공</span>
@@ -126,7 +138,7 @@ export default function BeconCloudPage() {
                     />
                   </div>
                   <div className="flex items-center justify-center gap-2 mt-4">
-                    <p className="text-sm md:text-base font-semibold text-primary">BECON cloud 소개 영상</p>
+                    <p className="text-sm md:text-base font-semibold text-primary">BECON Cloud 소개 영상</p>
                   </div>
                 </Card>
               </div>
@@ -136,7 +148,7 @@ export default function BeconCloudPage() {
           {/* Platform Info */}
           <section className="py-12 md:py-16 bg-white">
             <div className="container mx-auto px-4">
-              <div className="max-w-5xl mx-auto">
+              <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 leading-tight">
@@ -171,7 +183,7 @@ export default function BeconCloudPage() {
                 </p>
               </div>
 
-              <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 <Card className="p-4 md:p-6 hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-3 md:mb-4">
                     <Bell className="h-6 w-6 md:h-7 md:w-7 text-primary" />
@@ -229,7 +241,7 @@ export default function BeconCloudPage() {
           {/* Detailed Features with Images */}
           <section id="details" className="py-12 md:py-20">
             <div className="container mx-auto px-4">
-              <div className="max-w-6xl mx-auto space-y-12 md:space-y-20">
+              <div className="max-w-[1600px] mx-auto space-y-12 md:space-y-20">
                 {/* Energy Waste Alerts */}
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
                   <div>
@@ -257,12 +269,12 @@ export default function BeconCloudPage() {
                     </div>
                   </div>
                   <div className="relative flex items-start justify-center md:justify-end">
-                    <div className="relative w-full max-w-[800px]">
+                    <div className="relative w-full max-w-[1600px]">
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Rk89RqxVxbvunDPURytyrHsfw0i3JH.png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V94kXUv1SjbtAUdu4t8uFzsIDrntKS.png"
                         alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
-                        width={800}
-                        height={1000}
+                        width={1600}
+                        height={2000}
                         className="rounded-lg shadow-xl w-full h-auto"
                       />
                     </div>
@@ -295,12 +307,12 @@ export default function BeconCloudPage() {
                     </div>
                   </div>
                   <div className="order-1 md:order-2 relative flex items-start justify-center md:justify-start">
-                    <div className="relative w-full max-w-[800px]">
+                    <div className="relative w-full max-w-[1000px]">
                       <Image
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VAr6gNZU7YlqlU2ToL5VKgbF4DZLUO.png"
                         alt="에너지 절감 결과"
-                        width={800}
-                        height={1000}
+                        width={1000}
+                        height={1250}
                         className="rounded-lg shadow-xl w-full h-auto"
                       />
                     </div>
@@ -313,8 +325,8 @@ export default function BeconCloudPage() {
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hdvHgPUDWcPL1qR4KINphoSNMwfX4i.png"
                       alt="기기서비스 리포트 상세"
-                      width={600}
-                      height={800}
+                      width={750}
+                      height={1000}
                       className="rounded-lg shadow-xl w-full h-auto"
                     />
                   </div>
@@ -420,7 +432,7 @@ export default function BeconCloudPage() {
           {/* CTA Section */}
           <section className="py-12 md:py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4">
-              <div className="max-w-3xl mx-auto text-center">
+              <div className="max-w-5xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                   지금 바로 BECON Cloud를
                   <br />
@@ -476,7 +488,7 @@ export default function BeconCloudPage() {
           {/* Footer */}
           <footer className="py-8 md:py-12 bg-foreground text-background">
             <div className="container mx-auto px-4">
-              <div className="max-w-6xl mx-auto">
+              <div className="max-w-7xl mx-auto">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
                   <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -518,6 +530,8 @@ export default function BeconCloudPage() {
           </footer>
         </main>
       </div>
+
+      <BeconCloudPopup />
     </div>
   )
 }
