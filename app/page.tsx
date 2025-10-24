@@ -291,7 +291,7 @@ export default function BeconCloudPage() {
                   <div className="relative flex items-start justify-center md:justify-end">
                     <div className="relative w-full max-w-[1600px]">
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Dnj82WZk9DIzxDcxaakmtQ98grJbi6.png"
+                        src="/images/design-mode/image(4).png"
                         alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
                         width={1600}
                         height={2000}
