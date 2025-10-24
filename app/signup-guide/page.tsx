@@ -125,8 +125,8 @@ export default function SignupGuidePage() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-2 md:px-4">
-          <div className="flex items-center justify-between py-4 gap-2 md:gap-4">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between py-4 gap-4">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 hover:bg-secondary rounded-lg flex-shrink-0"
@@ -134,41 +134,39 @@ export default function SignupGuidePage() {
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
 
-            <div className="flex items-center gap-2 md:gap-4">
+            <div className="flex items-center gap-3 md:gap-4">
               <a
                 href="https://beconcloud.lge.com/index.do"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center gap-1 w-[100px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
+                className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
               >
-                <div className="flex items-center gap-1 md:gap-2">
-                  <div className="w-5 h-5 md:w-8 md:h-8 bg-[#a50034] rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold text-[10px] md:text-sm">LG</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 md:w-8 md:h-8 bg-[#a50034] rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs md:text-sm">LG</span>
                   </div>
-                  <span className="font-bold text-[10px] md:text-sm leading-none whitespace-nowrap">
-                    LG BECON cloud
-                  </span>
+                  <span className="font-bold text-xs md:text-sm leading-none whitespace-nowrap">LG BECON cloud</span>
                 </div>
-                <span className="text-[10px] md:text-xs text-gray-400">바로가기</span>
+                <span className="text-xs text-gray-400">바로가기</span>
               </a>
 
               <a
                 href="https://himsolutek.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center gap-1 w-[100px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
+                className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all group"
               >
-                <span className="font-bold text-[10px] md:text-sm whitespace-nowrap">Hi-M Solutek</span>
-                <span className="text-[10px] md:text-xs text-gray-400">바로가기</span>
+                <span className="font-bold text-xs md:text-sm whitespace-nowrap">Hi-M Solutek</span>
+                <span className="text-xs text-gray-400">바로가기</span>
               </a>
             </div>
 
             <a
               href="tel:1544-8777"
-              className="flex flex-col items-center justify-center gap-1 w-[100px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all ml-auto"
+              className="flex flex-col items-center justify-center gap-1 w-[140px] h-[70px] md:w-[160px] md:h-[80px] border-2 border-gray-200 rounded-lg hover:border-primary/50 hover:bg-gray-50 transition-all ml-auto"
             >
               <Phone className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
-              <span className="font-semibold text-[10px] md:text-sm whitespace-nowrap">고객센터 연결</span>
+              <span className="font-semibold text-xs md:text-sm whitespace-nowrap">고객센터 연결</span>
             </a>
           </div>
         </div>
