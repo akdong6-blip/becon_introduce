@@ -44,12 +44,7 @@ export function BeconCloudPopup() {
           </h3>
 
           <div className="relative w-full aspect-square mb-2 rounded-lg overflow-hidden">
-            <Image
-              src="/images/design-mode/image(2).png"
-              alt="LG BECON cloud Service"
-              fill
-              className="object-cover"
-            />
+            <Image src="/images/becon-cloud-service.png" alt="LG BECON cloud Service" fill className="object-cover" />
           </div>
 
           <Button className="w-full mb-2 bg-black hover:bg-black/90 text-white text-xs py-1.5 h-auto" asChild>
