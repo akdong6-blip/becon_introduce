@@ -123,7 +123,7 @@ export default function BeconCloudPage() {
                   <div className="inline-block mb-3 md:mb-5 px-3 py-1.5 bg-primary/10 rounded-full">
                     <span className="text-xs md:text-sm font-semibold text-primary">LG전자 제공</span>
                   </div>
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-5 text-balance">
+                  <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-3 md:mb-5 text-balance">
                     시스템 에어컨을
                     <br />
                     <span className="text-primary">스마트하게 원격 관리</span>
@@ -131,20 +131,24 @@ export default function BeconCloudPage() {
                 </div>
 
                 {/* Video Preview Card */}
-                <Card className="p-3 md:p-5 bg-white overflow-hidden">
-                  <div className="relative aspect-video rounded-lg overflow-hidden bg-black">
-                    <iframe
-                      src="https://archive.org/embed/20251015_20251015_0401"
-                      className="absolute inset-0 w-full h-full"
-                      frameBorder="0"
-                      allowFullScreen
-                      allow="fullscreen"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center gap-2 mt-3">
-                    <p className="text-xs md:text-sm font-semibold text-primary">BECON cloud 소개 영상</p>
-                  </div>
-                </Card>
+                <div className="max-w-4xl mx-auto">
+                  <Card className="p-3 md:p-5 bg-white overflow-hidden">
+                    <div className="relative aspect-video rounded-lg overflow-hidden bg-black">
+                      <iframe
+                        src="https://archive.org/embed/20251015_20251015_0401"
+                        className="absolute inset-0 w-full h-full"
+                        frameBorder="0"
+                        allowFullScreen
+                        allow="fullscreen"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center gap-2 mt-3">
+                      <p className="text-base md:text-lg lg:text-xl font-semibold text-primary">
+                        BECON cloud 소개 영상
+                      </p>
+                    </div>
+                  </Card>
+                </div>
               </div>
             </div>
           </section>
@@ -155,7 +159,7 @@ export default function BeconCloudPage() {
               <div className="max-w-7xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6 leading-tight">
+                    <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-5 md:mb-6 leading-tight">
                       제어는 더 <span className="text-primary">편리</span>하게
                       <br />
                       관리는 더 <span className="text-primary">스마트</span>하게
@@ -182,7 +186,7 @@ export default function BeconCloudPage() {
             <div className="container mx-auto px-4">
               <div className="text-center mb-10 md:mb-14">
                 <div className="flex items-center justify-center gap-2.5 mb-3 md:mb-5">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">주요 에러 알림</h2>
+                  <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold">주요 에러 알림</h2>
                   <Button
                     onClick={() => setErrorAlertOpen(true)}
                     className="bg-[#a50034] hover:bg-[#8a002b] text-white px-3 py-1.5 rounded-full text-xs font-semibold"
@@ -259,13 +263,15 @@ export default function BeconCloudPage() {
                 {/* Energy Waste Alerts */}
                 <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
                   <div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">에너지 낭비 알림</h2>
+                    <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-5 md:mb-6">에너지 낭비 알림</h2>
                     <p className="text-base md:text-lg text-muted-foreground mb-5 md:mb-6 leading-relaxed">
                       <span className="font-semibold">에너지 절감 계약(유상) 고객 Only</span>
                       <br />- BECON cloud Web/APP을 통한 낭비 알림 제공
                     </p>
-                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6 text-primary">
+                    <h3 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-5 md:mb-6 text-primary">
                       전기요금을 지켜주는 꿀팁!
+                      <br />
+                      에너지 절감까지!
                     </h3>
                     <div className="space-y-3 md:space-y-4">
                       <div className="flex items-start gap-2.5">
@@ -298,13 +304,13 @@ export default function BeconCloudPage() {
                 {/* Energy Savings Report */}
                 <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
                   <div className="order-2 md:order-1">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">에너지 절감 리포트</h2>
+                    <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-5 md:mb-6">에너지 절감 리포트</h2>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-5 md:mb-6 leading-relaxed">
                       <span className="font-semibold">※ 에너지 절감 계약(유상) 고객 Only</span>
                       <br />- BECON cloud Web을 통한 절감 리포트 확인 가능
                     </p>
 
-                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-primary whitespace-nowrap">
+                    <h3 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-5 text-primary">
                       실내 쾌적함은 유지하면서
                       <br />
                       에너지 절감까지!
@@ -323,10 +329,10 @@ export default function BeconCloudPage() {
                   <div className="order-1 md:order-2 relative flex items-start justify-center md:justify-start">
                     <div className="relative w-full max-w-[1000px]">
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7HxVnpf2UxkWdPrtxqFkv5wvQaX2Rl.png"
-                        alt="에너지 절감 결과"
+                        src="/images/energy-savings-cumulative-analysis.png"
+                        alt="에너지 절감 누적 분석 리포트"
                         width={1000}
-                        height={1250}
+                        height={800}
                         className="rounded-lg shadow-xl w-full h-auto"
                       />
                     </div>
@@ -337,15 +343,15 @@ export default function BeconCloudPage() {
                 <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
                   <div className="order-2 md:order-1 relative">
                     <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjXqOTYMOWuJSr0Ox2MPLrUXcgSGc2.png"
-                      alt="기기서비스 리포트 상세"
+                      src="/images/device-service-comprehensive-report.png"
+                      alt="기기서비스 종합 리포트"
                       width={750}
-                      height={1000}
+                      height={900}
                       className="rounded-lg shadow-xl w-full h-auto"
                     />
                   </div>
                   <div className="order-1 md:order-2">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">기기서비스 리포트</h2>
+                    <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-5 md:mb-6">기기서비스 리포트</h2>
                     <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 md:mb-6">
                       내 제품의 상태와 서비스 이력을 한눈에!
                     </p>
@@ -396,7 +402,7 @@ export default function BeconCloudPage() {
                 {/* AI Prediction */}
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/30 rounded-2xl p-5 md:p-6 lg:p-10">
                   <div className="text-center mb-6 md:mb-10">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-5">AI 고장예측</h2>
+                    <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-3 md:mb-5">AI 고장예측</h2>
                     <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-semibold">
                       제품이 고장나기전 미리 대비하자!
                     </p>
