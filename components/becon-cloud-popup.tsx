@@ -45,7 +45,7 @@ export function BeconCloudPopup() {
 
           <div className="relative w-full aspect-square mb-2 rounded-lg overflow-hidden">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-odr3ab9yr3Hdy7It4lpC8S4i0MDipI.png"
+              src="/images/becon-cloud-isometric-illustration.png"
               alt="LG BECON cloud Service"
               fill
               className="object-cover"
