@@ -259,24 +259,24 @@ export default function BeconCloudPage() {
                 {/* Energy Waste Alerts */}
                 <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
                   <div>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6">에너지 낭비 알림</h2>
-                    <p className="text-sm md:text-base text-muted-foreground mb-5 md:mb-6 leading-relaxed">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">에너지 낭비 알림</h2>
+                    <p className="text-base md:text-lg text-muted-foreground mb-5 md:mb-6 leading-relaxed">
                       <span className="font-semibold">에너지 절감 계약(유상) 고객 Only</span>
                       <br />- BECON cloud Web/APP을 통한 낭비 알림 제공
                     </p>
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 md:mb-6 text-primary">
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6 text-primary">
                       전기요금을 지켜주는 꿀팁!
                     </h3>
                     <div className="space-y-3 md:space-y-4">
                       <div className="flex items-start gap-2.5">
-                        <span className="text-primary text-lg md:text-xl mt-0.5 flex-shrink-0">✓</span>
-                        <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+                        <span className="text-primary text-xl md:text-2xl mt-0.5 flex-shrink-0">✓</span>
+                        <p className="text-base md:text-lg lg:text-xl leading-relaxed">
                           끄기 잊음 / 단열 불량 알림 / 설정 온도 과다
                         </p>
                       </div>
                       <div className="flex items-start gap-2.5">
-                        <span className="text-primary text-lg md:text-xl mt-0.5 flex-shrink-0">✓</span>
-                        <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+                        <span className="text-primary text-xl md:text-2xl mt-0.5 flex-shrink-0">✓</span>
+                        <p className="text-base md:text-lg lg:text-xl leading-relaxed">
                           실내 온도 이상 / 운전 시간 과다 / 잦은 On/Off
                         </p>
                       </div>
@@ -285,7 +285,7 @@ export default function BeconCloudPage() {
                   <div className="relative flex items-start justify-center md:justify-end">
                     <div className="relative w-full max-w-[1600px]">
                       <Image
-                        src="/images/design-mode/image(3).png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Dnj82WZk9DIzxDcxaakmtQ98grJbi6.png"
                         alt="당일상담비밀분석 - 에너지 낭비 알림 상세"
                         width={1600}
                         height={2000}
@@ -298,22 +298,22 @@ export default function BeconCloudPage() {
                 {/* Energy Savings Report */}
                 <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
                   <div className="order-2 md:order-1">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6">에너지 절감 리포트</h2>
-                    <p className="text-xs md:text-sm lg:text-base text-muted-foreground mb-5 md:mb-6 leading-relaxed">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">에너지 절감 리포트</h2>
+                    <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-5 md:mb-6 leading-relaxed">
                       <span className="font-semibold">※ 에너지 절감 계약(유상) 고객 Only</span>
                       <br />- BECON cloud Web을 통한 절감 리포트 확인 가능
                     </p>
 
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 text-primary whitespace-nowrap">
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-primary whitespace-nowrap">
                       실내 쾌적함은 유지하면서
                       <br />
                       에너지 절감까지!
                     </h3>
                     <div className="space-y-3">
                       <Card className="p-4 md:p-5 bg-primary/5 border-primary/20">
-                        <h4 className="font-bold mb-3 text-base md:text-lg">에너지 절감 리포트</h4>
-                        <h5 className="font-bold mb-2.5 text-sm md:text-base">에너지 절감 누적 분석</h5>
-                        <p className="text-xs md:text-sm lg:text-base text-muted-foreground leading-relaxed">
+                        <h4 className="font-bold mb-3 text-lg md:text-xl">에너지 절감 리포트</h4>
+                        <h5 className="font-bold mb-2.5 text-base md:text-lg">에너지 절감 누적 분석</h5>
+                        <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed">
                           2023년 12월 ~ 2024년 11월 에너지 예측 절감 금액은 7,448,384원입니다. <br />
                           예측 절감량(절감률)은 59,506kWh(16.7%) 입니다.
                         </p>
@@ -323,7 +323,7 @@ export default function BeconCloudPage() {
                   <div className="order-1 md:order-2 relative flex items-start justify-center md:justify-start">
                     <div className="relative w-full max-w-[1000px]">
                       <Image
-                        src="/images/design-mode/image(3).png"
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7HxVnpf2UxkWdPrtxqFkv5wvQaX2Rl.png"
                         alt="에너지 절감 결과"
                         width={1000}
                         height={1250}
@@ -337,7 +337,7 @@ export default function BeconCloudPage() {
                 <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
                   <div className="order-2 md:order-1 relative">
                     <Image
-                      src="/images/design-mode/image(3).png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IjXqOTYMOWuJSr0Ox2MPLrUXcgSGc2.png"
                       alt="기기서비스 리포트 상세"
                       width={750}
                       height={1000}
@@ -345,8 +345,8 @@ export default function BeconCloudPage() {
                     />
                   </div>
                   <div className="order-1 md:order-2">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6">기기서비스 리포트</h2>
-                    <p className="text-lg md:text-xl lg:text-2xl font-bold mb-5 md:mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">기기서비스 리포트</h2>
+                    <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 md:mb-6">
                       내 제품의 상태와 서비스 이력을 한눈에!
                     </p>
                     <div className="space-y-4 md:space-y-5">
@@ -355,12 +355,12 @@ export default function BeconCloudPage() {
                           <span className="text-primary font-bold text-base md:text-lg">1</span>
                         </div>
                         <div>
-                          <h4 className="font-bold mb-1.5 text-sm md:text-base lg:text-lg">현재 에러 발생 기기</h4>
-                          <p className="text-xs md:text-sm lg:text-base">
+                          <h4 className="font-bold mb-1.5 text-base md:text-lg lg:text-xl">현재 에러 발생 기기</h4>
+                          <p className="text-sm md:text-base lg:text-lg">
                             현재 에러 발생 기기는 0대입니다. (발행일 기준)
                           </p>
-                          <p className="text-xs md:text-sm lg:text-base">실외기 : 없습니다</p>
-                          <p className="text-xs md:text-sm lg:text-base">실내기 : 없습니다</p>
+                          <p className="text-sm md:text-base lg:text-lg">실외기 : 없습니다</p>
+                          <p className="text-sm md:text-base lg:text-lg">실내기 : 없습니다</p>
                         </div>
                       </div>
 
@@ -369,10 +369,10 @@ export default function BeconCloudPage() {
                           <span className="text-primary font-bold text-base md:text-lg">2</span>
                         </div>
                         <div>
-                          <h4 className="font-bold mb-1.5 text-sm md:text-base lg:text-lg">과거 에러 발생 기기</h4>
-                          <p className="text-xs md:text-sm lg:text-base">분석기간 동안</p>
-                          <p className="text-xs md:text-sm lg:text-base">실외기 0대</p>
-                          <p className="text-xs md:text-sm lg:text-base">
+                          <h4 className="font-bold mb-1.5 text-base md:text-lg lg:text-xl">과거 에러 발생 기기</h4>
+                          <p className="text-sm md:text-base lg:text-lg">분석기간 동안</p>
+                          <p className="text-sm md:text-base lg:text-lg">실외기 0대</p>
+                          <p className="text-sm md:text-base lg:text-lg">
                             실내기 1대에 대하여 에러 이력이 확인되었습니다
                           </p>
                         </div>
@@ -383,10 +383,10 @@ export default function BeconCloudPage() {
                           <span className="text-primary font-bold text-base md:text-lg">3</span>
                         </div>
                         <div>
-                          <h4 className="font-bold mb-1.5 text-sm md:text-base lg:text-lg">서비스 이력</h4>
-                          <p className="text-xs md:text-sm lg:text-base">분석기간 동안</p>
-                          <p className="text-xs md:text-sm lg:text-base">부품 소요 서비스 처리는 10건</p>
-                          <p className="text-xs md:text-sm lg:text-base">조정 수리 및 방문 설명 4건 수행하였습니다</p>
+                          <h4 className="font-bold mb-1.5 text-base md:text-lg lg:text-xl">서비스 이력</h4>
+                          <p className="text-sm md:text-base lg:text-lg">분석기간 동안</p>
+                          <p className="text-sm md:text-base lg:text-lg">부품 소요 서비스 처리는 10건</p>
+                          <p className="text-sm md:text-base lg:text-lg">조정 수리 및 방문 설명 4건 수행하였습니다</p>
                         </div>
                       </div>
                     </div>
@@ -396,16 +396,16 @@ export default function BeconCloudPage() {
                 {/* AI Prediction */}
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/30 rounded-2xl p-5 md:p-6 lg:p-10">
                   <div className="text-center mb-6 md:mb-10">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-5">AI 고장예측</h2>
-                    <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-semibold">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-5">AI 고장예측</h2>
+                    <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-semibold">
                       제품이 고장나기전 미리 대비하자!
                     </p>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-5 md:gap-6 mb-6 md:mb-10">
                     <Card className="p-4 md:p-5 lg:p-6 flex flex-col">
-                      <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">핵심 6개 항목 진단</h3>
-                      <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-3 whitespace-nowrap overflow-hidden text-ellipsis">
+                      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">핵심 6개 항목 진단</h3>
+                      <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-3 whitespace-nowrap overflow-hidden text-ellipsis">
                         압축기,센서류,팬(모터),드레인펌프,약운전,냉매
                       </p>
                       <div className="relative w-full flex-1 min-h-[350px]">
@@ -431,10 +431,10 @@ export default function BeconCloudPage() {
                   </div>
 
                   <div className="text-center">
-                    <p className="text-lg md:text-xl lg:text-2xl font-bold mb-2.5">
+                    <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-2.5">
                       고장 예측을 통한 선제적 조치로 성수기 걱정은 <span className="text-primary">Zero</span>
                     </p>
-                    <p className="text-sm md:text-base lg:text-lg text-muted-foreground">
+                    <p className="text-base md:text-lg lg:text-xl text-muted-foreground">
                       AI 기술로 고장을 미리 예측하여 사전 조치가 가능합니다
                     </p>
                   </div>
@@ -447,12 +447,12 @@ export default function BeconCloudPage() {
           <section className="py-10 md:py-16 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4">
               <div className="max-w-5xl mx-auto text-center">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6">
                   지금 바로 BECON cloud를
                   <br />
                   경험해 보세요
                 </h2>
-                <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 opacity-90">
+                <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 opacity-90">
                   스마트한 에어컨 관리로 에너지 절감과 편리함을 동시에 누리세요
                 </p>
                 <div className="flex flex-col sm:flex-row gap-2.5 md:gap-3 justify-center">
