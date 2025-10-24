@@ -157,8 +157,8 @@ export default function BeconCloudPage() {
                       관리는 더 <span className="text-primary">스마트</span>하게
                     </h2>
                     <p className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed">
-                      BECON cloud는 클라우드 기반의 에어솔루션 제품 토탈 유지 관리 서비스 플랫폼으로써 실시간 모니터링
-                      및 주요 에러 알림 기능을 통해 신속한 출동 서비스를 제공하고 설비의 효율적인 관리 및 에너지 절감
+                      BECON cloud는 클라우드 기반의 에어솔루션 제품 토탈 유지 관리 <br /> 서비스 플랫폼으로써 실시간 모니터링
+                      및 주요 에러 알림 기능을 통해 <br />  신속한 출동 서비스를 제공하고 설비의 효율적인 관리 및 에너지 절감
                       서비스를 제공합니다.
                     </p>
                   </div>
@@ -191,7 +191,7 @@ export default function BeconCloudPage() {
                   <div className="text-4xl md:text-5xl font-bold text-primary mb-2">01</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">실시간 이상 알림</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    사용 기기 이상 발생 시, Web/App을 통한 즉시 알림
+                    사용 기기 이상 발생 시, <br /> Web/App을 통한 즉시 알림
                   </p>
                 </Card>
 
@@ -300,7 +300,7 @@ export default function BeconCloudPage() {
                         <h4 className="font-bold mb-4 text-lg md:text-xl">에너지 절감 리포트</h4>
                         <h5 className="font-bold mb-3 text-base md:text-lg">에너지 절감 누적 분석</h5>
                         <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed">
-                          2023년 12월 ~ 2024년 11월 에너지 예측 절감 금액은 7,448,384원입니다. 예측 절감량(절감률)은
+                          2023년 12월 ~ 2024년 11월 에너지 예측 절감 금액은 7,448,384원입니다. <br /> 예측 절감량(절감률)은
                           59,506kWh(16.7%) 입니다.
                         </p>
                       </Card>
@@ -434,7 +434,7 @@ export default function BeconCloudPage() {
             <div className="container mx-auto px-4">
               <div className="max-w-5xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                  지금 바로 BECON Cloud를
+                  지금 바로 BECON cloud를
                   <br />
                   경험해 보세요
                 </h2>
