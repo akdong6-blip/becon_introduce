@@ -126,7 +126,7 @@ export default function BeconCloudPage() {
                   <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold mb-3 md:mb-5 text-balance">
                     시스템 에어컨을
                     <br />
-                    <span className="text-primary">스마트하게 원격 관리</span>
+                    <span className="text-primary">원격 관리로 스마트하게</span>
                   </h1>
                 </div>
 
